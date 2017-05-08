@@ -1,0 +1,15 @@
+cache: yarn
+
+language: node_js
+node_js:
+  - "6.9"
+
+script:
+  - yarn jest
+  - yarn type-check
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - .jest/cache

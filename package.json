@@ -1,8 +1,39 @@
 {
-  "name": "fancynewproject",
-  "version": "1.0.0",
-  "description": "Analytics for your React projects",
-  "main": "index.js",
+  "name": "mascara",
+  "version": "0.0.1",
+  "description": "Centralised analytics for your React projects",
+  "main": "build/index.js",
   "author": "Maxim Cramer <mennenia@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "@types/typescript": "^2.0.0",
+    "jest": "^20.0.0",
+    "ts-jest": "^20.0.0",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2"
+  },
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/"
+    ],
+    "cacheDirectory": ".jest/cache"
+  }
 }
