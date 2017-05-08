@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "es6",
+        "module": "commonjs",
+        "rootDir": "src",
+        "outDir": "build",
+        "allowJs": true,
+        "pretty": true,
+        "moduleResolution": "node",
+        "strictNullChecks": false,
+        "experimentalDecorators": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "exclude": [
+        "dangerfile.ts",
+        "node_modules",
+        "build"
+    ]
+}
