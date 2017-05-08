@@ -1,0 +1,8 @@
+{
+  "name": "fancynewproject",
+  "version": "1.0.0",
+  "description": "Analytics for your React projects",
+  "main": "index.js",
+  "author": "Maxim Cramer <mennenia@gmail.com>",
+  "license": "MIT"
+}
