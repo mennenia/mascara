@@ -9,7 +9,8 @@
         "pretty": true,
         "moduleResolution": "node",
         "strictNullChecks": false,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "declaration": true
     },
     "include": [
         "src/**/*.ts",
